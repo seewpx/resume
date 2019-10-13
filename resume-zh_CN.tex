@@ -13,76 +13,79 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{许伟平}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{weiping\_xu@aliyun.com} \textperiodcentered\ 
+  \phone{(+86) 130-182-50670} %\textperiodcentered\ 
+  %\linkedin[billryan8]{https://www.linkedin.com/in/billryan8}
+  }
  
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
+\datedsubsection{\textbf{电子科技大学}, 成都}{2018 -- 至今}
+\textit{在读硕士研究生}\ 仪器仪表工程, 预计 2021 年 6 月毕业
+\datedsubsection{\textbf{电子科技大学}, 成都, 四川}{2014 -- 2018}
+\textit{学士}\ 自动化（大类），测控技术与仪器
 
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
-\begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
+\section{\faCogs\ 技术能力}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言熟练程度：python > C++ >= bash/shell > matlab >= C\#
+  \item 开发平台：Linux 
+  \item 深度学习库熟悉程度：pytorch > keras >= tensorflow
+  \item 熟悉linux系统，熟练使用Gentoo软件自动化编译构建系统
+  \item 参与拥抱开源世界，为TeXmacs，Gentoo官方库提交BUG、PR，Gentoo发行版社区wiki的志愿维护者。
+  \item linux运维能力，管理教研室Linux服务器，拥有自己的编译服务器, 网站和vps。
+  \item 了解嵌入式开发，PCB画板投板。
 \end{itemize}
 
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
-\begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
-\begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
-\end{itemize}
-\end{onehalfspacing}
 
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
-\begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+\section{\faUsers\ 项目经历}
+\datedsubsection{\textbf{无损检测与结构监测研究中心} 自动化学院}{2018年9月 -- 至今}
+\role{国家自然科学基金重大仪器专项}{钢轨接触疲劳及裂纹多物理高速巡检监测技术攻关和仪器研发}
+缺陷检测功能集成，探伤设备便携化，软件环境搭建，功能协助开发
 \begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
+  \item 提高检测精度和速度；
+  \item 配合研究电磁脉冲激励红外热成像的速度效应；
+  \item 读取视频流，检测并标注缺陷位置（画框），实时显示并统计。
 \end{itemize}
-\end{onehalfspacing}
 
+
+
+\section{\faCogs\ 科研能力}
+% increase linespacing [parsep=0.5ex]
+\datedsubsection{\textbf{一、发表\ Pattern Deep Region Learning for Crack Detection in Thermography Diagnosis System } metals}{2018年6月 -- 2018年9月}
+\role{第一作者}{SCI三区}
+关于电磁脉冲激励红外热成像静态图像表面缺陷检测，从Faster R-CNN改进，
+基于数据特点改进数据增强方法，调整网络结构，加入计算机视觉注意力机制（nolocal），
+在ResNet的ShortCut加入约束，在features的channels间加入稀疏优化，有效提高检测精度和召回率。
+\datedsubsection{\textbf{二、研究\ 基于背景建模的缺陷检测方法} }{2018年9月 -- 2019年6月}
+(研一上课期间) 由于数据样本小，探索从背景出发，利用自编码器（AE，VAE，staged-AE/VAE,etc.）训练缺陷异常检测网络，
+构建基于平均值方差值和协方差值多值加权相似最大化损失函数，弥补自编码器输出模糊，像素位置不匹配对应的问题，
+对碳纤维，纺织布等结构性数据效果明显，对缺陷信息易被淹没的电磁脉冲红外热成像也有一定效果。
+\datedsubsection{\textbf{三、正在编写第二篇论文\ 电磁脉冲激励红外热成像时间上下文视频表面缺陷检测} }{2019年7月 -- 至今}
+（最近）电磁脉冲激励红外热成像时间上下文视频表面缺陷检测，采用One-stage，点面检测（二维高斯加权），模糊匹配，低秩矩阵约束，
+改进的卷积化LSTM。对应于电磁脉冲激励红外热成像过程中的热扩散现象，表面缺陷裂纹等小而难以辨认的特点，小样本数据的特点。
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
 %An xxx optimized for xxx\cite{verma2015large}
 %\begin{itemize}
 %  \item main contribution
 %\end{itemize}
-
-\section{\faCogs\ IT 技能}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
-\end{itemize}
+\section{\faHeartO\ 研究生学业课程}
+信号处理方法及应用、现代信号处理、计量方法与误差理论、随机过程及应用、矩阵理论、计算机视觉、现代时域测试、现代检测技术
 
 \section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
+\datedline{\textit{二等奖学金}}{研究生二年级}
+\datedline{二等奖学金、一等奖学金}{本科}
+\datedline{微芯杯电子设计竞赛一等奖}{本科}
 
 \section{\faInfo\ 其他}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
+  \item 个人网站: https://ai.seewpx.me/nextcloud/
+  \item GitHub: https://github.com/seewpx
+  \item 语言: 英语 - 熟练(雅思 备考中，四六级已通过)
 \end{itemize}
 
 %% Reference
